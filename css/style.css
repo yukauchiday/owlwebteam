@@ -359,3 +359,62 @@ h4 {
   transform: translateY(0);
   opacity: 1;
 }
+
+
+
+/* 
+works 
+*/
+
+.work {
+margin: 0 auto;
+padding: 0;
+}
+
+.work_inner {
+  margin-top: 20px;
+}
+
+.work_ttl {
+  font-size: 24px;
+  color: #0E0F2F;
+  position: relative;
+}
+
+.work_ttl::before,
+.work_ttl::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0.6px;
+  width: 64px;
+  background: var(--primary-color);
+}
+
+.work_ttl::before {
+  left: 0;
+}
+
+.work_ttl::after {
+  right: 0;
+}
+
+
+.works{}
+.works_list{}
+.works_item{}
+.works_img{}
+
+.works_title{}
+
+.works_contents{}
+.works_table{}
+.works_table-row{}
+.table-heading{}
+.table_date{}
+.works_table-row{}
+.table-heading{}
+.table_date{}
+.works_sub-page{}
+.sub-page-link{}    
