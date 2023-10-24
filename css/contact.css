@@ -1,4 +1,11 @@
 @charset "UTF-8";
+:root {
+  /* 色管理用の変数 */
+  --white-color: #fff;
+  --black-color: #0e0f2f;
+  --accent-color: #ffad62;
+  --primary-color: #2d8fe9;
+}
 /* contact */
 @media screen and (min-width: 768px) {
   .u_sp_new-line {display: none;}
@@ -60,6 +67,11 @@
   border: 0.4px solid var(--primary-color);
   padding: 8px;
 }
+@media screen and (min-width: 1080px) {
+  .contact_input {
+    border: 0.6px solid var(--primary-color);
+  }
+}
 .contact_txtarea {
   width: 100%;
   height: 200px;
@@ -68,22 +80,58 @@
 }
 .contact_privacy {
   margin-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 24px;
 }
 .contact-privacy_checkbox {
   -webkit-appearance: auto;
   -moz-appearance: auto;
   appearance: auto;
 }
+
 .contact-privacy_label {
   margin-left: 16px;
 }
 .contact-privacy_label_color {
+  font-weight: bold;
   color: var(--primary-color);
-  border-bottom: 0.6px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 .contact-privacy_label_color:hover {
-  background-image: linear-gradient(transparent 50%, var(--accent-color) 0%);
+  color: var(--accent-color);
+}
+
+.contact-privacyPolicy {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 16px;
+  border: 0.4px solid var(--primary-color);
+}
+
+.contact-privacyPolicy::-webkit-scrollbar {
+  width: 4px;
+}
+.contact-privacyPolicy::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+}
+.contact-privacyPolicy::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+.contact-privacy_txt {
+  font-size: 14px;
+  margin: 0 auto;
+  text-align-last: left;
+}
+@media screen and (min-width: 1080px) {
+  .contact-privacy_txt {
+    font-size: 16px;
+  }
+}
+.contact-privacyPolicy {
+  display: none;
+}
+.contact-privacyPolicy.is_active {
+  display: block;
+  margin-bottom: 48px;
 }
 
 .contact_btn {
@@ -92,7 +140,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
   max-width: 240px;
   padding: 10px 25px;
   color: #313131;
@@ -132,3 +182,11 @@
 .contact_submit {
   background: transparent;
 }
+
+/* thanks */
+.thanks_img {
+  height: 280px;
+  max-width: 600px;
+  object-fit: cover;
+}
+
