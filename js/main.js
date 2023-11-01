@@ -1,3 +1,12 @@
+$(window).scroll(function () {
+  var pos = $("body").offset();
+  if ($(this).scrollTop() > pos.top) {
+    $(".fixed-header").fadeIn();
+  } else {
+    $(".fixed-header").fadeOut();
+  }
+});
+
 // ふわっと文字出す
 //scroll_effect
 $(window).scroll(function () {
