@@ -1,6 +1,6 @@
 $(window).scroll(function () {
   var pos = $("body").offset();
-  if ($(this).scrollTop() > pos.top) {
+  if ($(this).scrollTop() > 700) {
     $(".fixed-header").fadeIn();
   } else {
     $(".fixed-header").fadeOut();
